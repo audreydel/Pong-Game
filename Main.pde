@@ -3,7 +3,7 @@ final int SCREENY = 400;
 final int PADDLEHEIGHT = 15;
 final int PADDLEWIDTH = 50;
 final int MARGIN = 10;
-      int i = SCREENX/2;
+      int i = SCREENX/2;                                    // middle x point of the screen
 
 
 Player thePlayer;
@@ -56,7 +56,7 @@ void draw()
   textSize(20);
   fill(250,204,38);
   text("Opponent's lives: " + computerPlayer.lives, 15, 50);
-  if (computerPlayer.lives < 0)
+  if (computerPlayer.lives < 0)                 // reset player lives
   {
     computerPlayer.lives = 3;
   }
