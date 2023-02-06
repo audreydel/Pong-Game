@@ -3,6 +3,7 @@ class Player {
   int ypos;
   color paddlecolor = color(232,44,210);
   int lives = 3;
+  
   Player(int screen_y)
   {
     xpos=SCREENX/2;
@@ -10,7 +11,7 @@ class Player {
   }
   void move(int x) 
   {
-    if (x>SCREENX-PADDLEWIDTH) xpos = SCREENX-PADDLEWIDTH;
+    if (x>SCREENX-PADDLEWIDTH) xpos = SCREENX-PADDLEWIDTH;            // keep paddle locked in screen view 
     else xpos=x;
   }
   void draw()
